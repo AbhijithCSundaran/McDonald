@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="ad.size" content="width=300,height=600">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <script type="text/javascript">
+    var clickTag = "";
+  </script>
+</head>
+
+<body onload="window.init()">
+
+  <div id="main">
+    <img src="images/logo.png" id="logo" class="hidden" alt="">
+    <div class="content">
+      <img src="images/burger_2.png" id="burger2" class="hidden" alt="">
+      <img src="images/burger_1.png" id="burger1" class="hidden" alt="">
+      <img src="images/text1-f1.png" id="text1_f1" class="full_text hidden" alt="">
+      <img src="images/text2-f1.png" id="text2_f1" class="full_text hidden" alt="">
+      <img src="images/text-f2.png" id="text_f2" class="full_text hidden" alt="">
+      <img src="images/text-f3.png" id="text_f3" class="full_text hidden" alt="">
+      <div id="terms" class="hidden">
+        <span>T&Cs apply.</span>
+      </div>
+    </div>
+    <div id="bgExit"></div>
+  </div>
+
+  <script>
+    var clickArea = document.getElementById("bgExit");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
+</body>
+
+</html>

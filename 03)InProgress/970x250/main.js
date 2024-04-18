@@ -30,14 +30,12 @@ function animate() {
 
   tl.addLabel('frame_2', 4)
     .to(text1_f1, 0.5, { autoAlpha: 0, ease: "power2.inOut", }, "frame_2")
-    .to(burger1, 0.5, { scale: 0.963, x: 101, y: -1, ease: "linear", }, "frame_2+=.5")
+    .to(burger1, 0.5, { scale: 0.805, x: 60, y: 22, ease: "linear", }, "frame_2+=.5")
     .to(burger2, 0.5, { scale: 1, x: 0, y: 0, autoAlpha: 1, ease: "linear", }, "frame_2+=.5")
-    .to(text1_f2, 0.5, { autoAlpha: 1, ease: "power2.inOut", }, "frame_2+=1")
-    .to(text2_f2, 0.5, { autoAlpha: 1, ease: "power2.inOut", }, "frame_2+=1")
+    .to(text_f2, 0.5, { autoAlpha: 1, ease: "power2.inOut", }, "frame_2+=1")
 
   tl.addLabel('frame_3', 8)
-    .to(text1_f2, 0.5, { autoAlpha: 0, ease: "power2.inOut", }, "frame_3")
-    .to(text2_f2, 0.5, { autoAlpha: 0, ease: "power2.inOut", }, "frame_3")
+    .to(text_f2, 0.5, { autoAlpha: 0, ease: "power2.inOut", }, "frame_3")
     .to(burger2, 0.5, { autoAlpha: 0, ease: "power2.inOut", }, "frame_3")
     .to(burger1, 1, { scale: 1, x: 0, y: 0, ease: "linear", }, "frame_3")
     .to(text_f3, 0.5, { autoAlpha: 1, ease: "power2.inOut", }, "frame_3+=1")
